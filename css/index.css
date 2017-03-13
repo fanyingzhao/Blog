@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h1 {
+  text-align: center; }
+
+.body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px; }
+
+.container {
+  margin: 0 auto;
+  background: #f7f7f7; }
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
+  header nav {
+    background: white; }
+    header nav ul {
+      width: 100%;
+      display: flex;
+      height: 60px;
+      justify-content: space-around; }
+      header nav ul li {
+        line-height: 60px; }
+        header nav ul li a {
+          font-size: 20px;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.8); }
+
+.carousel {
+  margin-top: 60px;
+  widows: 100%;
+  height: 700px;
+  overflow: hidden; }
+
+.carousel:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0; }
+
+.introduce {
+  margin: 0 200px;
+  padding: 50px 100px;
+  text-align: center; }
+  .introduce h3 {
+    margin: 20px 0; }
+  .introduce p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #7a7e89; }
+
+.direction {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto; }
+  .direction h1 {
+    margin: 30px; }
+  .direction ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .direction ul li {
+      margin: 15px 0;
+      position: relative; }
+      .direction ul li a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(180, 180, 180, 0.9);
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 12; }
+        .direction ul li a div {
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          transition: 0.8s, ease-out; }
+          .direction ul li a div p {
+            margin: 10px 0; }
+          .direction ul li a div p:first-child {
+            color: white;
+            font-size: 20px;
+            font-weight: 400; }
+          .direction ul li a div p:last-child {
+            color: #c8c8c8;
+            font-size: 15px; }
+    .direction ul img {
+      width: 350px;
+      height: 200px; }
+  .direction :hover > a {
+    opacity: 1; }
+  .direction :hover > a > div {
+    bottom: 20px; }
+
+.hot {
+  width: 1140px;
+  margin: 0 auto; }
+  .hot h1 {
+    margin: 30px; }
+  .hot ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .hot ul li {
+      background: white;
+      margin: 0px 0 20px 0;
+      padding-bottom: 30px;
+      width: 350px;
+      overflow: hidden;
+      box-shadow: 0px 6px 62px -6px rgba(0, 0, 0, 0.3); }
+      .hot ul li h1 {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: left;
+        font-family: "Open Sans", Arial, sans-serif;
+        color: rgba(0, 0, 0, 0.6); }
+      .hot ul li img {
+        width: 100%;
+        height: 220px; }
+      .hot ul li .hot-content {
+        padding: 0 20px; }
+        .hot ul li .hot-content p {
+          clear: both;
+          padding: 10px 0;
+          line-height: 1.4;
+          margin-bottom: 20px;
+          color: #848484; }
+        .hot ul li .hot-content .hot-info span:first-child {
+          float: left; }
+        .hot ul li .hot-content .hot-info span:last-child {
+          float: right; }
+        .hot ul li .hot-content a {
+          margin: 20px 0;
+          background: #ef6249;
+          color: white;
+          border: 2px solid #ef6249;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 8px 20px;
+          font-size: "Open Sans", Arial, sans-serif;
+          text-align: center;
+          vertical-align: middle;
+          border-radius: 30px; }
+
+footer {
+  background: #2F3032;
+  height: 200px; }
+
+/*# sourceMappingURL=index.css.map */
