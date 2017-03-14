@@ -1,23 +1,11 @@
-* {
-	padding: 0;
-	margin: 0;
-}
-
-a{text-decoration:none} 
-
-ul {
-	list-style: none;
-}
+@import "common.scss";
+@import "variable.scss";
+@import "page_header.scss";
 
 h1 {
 	text-align: center;
 }
 
-// 变量
-$nav-height: 60px;
-$module-margin: 30px;
-
-// 内容相关
 .body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
@@ -26,36 +14,6 @@ $module-margin: 30px;
 .container {
 	margin: 0 auto;
 	background: rgb(247,247,247);
-}
-header {
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	left: 0;
-	width: 100%;
-	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-
-	nav {	
-		background: white;
-
-		ul {
-			width: 100%;
-			display: flex;
-			height: $nav-height;
-			justify-content: space-around;
-
-			li {
-				line-height: $nav-height;
-
-				a {
-					font-size: 20px;
-					font-weight: 400;
-					color: rgba(0, 0, 0, 0.8);
-				}
-			}
-		}
-	}
-
 }
 
 .carousel {

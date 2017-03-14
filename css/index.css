@@ -8,17 +8,6 @@ a {
 ul {
   list-style: none; }
 
-h1 {
-  text-align: center; }
-
-.body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px; }
-
-.container {
-  margin: 0 auto;
-  background: #f7f7f7; }
-
 header {
   position: fixed;
   z-index: 1000;
@@ -39,6 +28,17 @@ header {
           font-size: 20px;
           font-weight: 400;
           color: rgba(0, 0, 0, 0.8); }
+
+h1 {
+  text-align: center; }
+
+.body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px; }
+
+.container {
+  margin: 0 auto;
+  background: #f7f7f7; }
 
 .carousel {
   margin-top: 60px;
